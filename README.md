@@ -1,2 +1,7 @@
-# icepack_tutorial
-Notebooks used during Daniel's icepack tutorial om 20-21 May 2019
+To build the docker image:
+
+    docker build -t icepack/tutorial:latest
+
+To run the docker image and expose a port so we can talk to JupyterHub:
+
+    docker run --interactive --tty --publish 8000:8000 icepack/tutorial:latest
